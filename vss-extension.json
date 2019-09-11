@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "codesigningwithdescription",
     "name": "Code Signing With Description",
-    "version": "2.1.5",
+    "version": "2.1.8",
     "public": true,
     "publisher": "markmcgookin",
     "targets": [{
