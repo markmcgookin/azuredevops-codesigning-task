@@ -1,18 +1,16 @@
 {
     "manifestVersion": 1,
-    "id": "codesigning",
-    "name": "Code Signing",
-    "version": "2.1.1",
+    "id": "codesigningwithdescription",
+    "name": "Code Signing With Description",
+    "version": "2.1.5",
     "public": true,
     "publisher": "markmcgookin",
-    "targets": [
-        {
-            "id": "Microsoft.VisualStudio.Services"
-        }
-    ],
-    "description": "Task that gives the user the ability to codesign assemblies and applications.",
+    "targets": [{
+        "id": "Microsoft.VisualStudio.Services"
+    }],
+    "description": "Task that gives the user the ability to codesign assemblies and applications, including a description.",
     "categories": [
-        "Build and release"
+        "Azure Pipelines"
     ],
     "galleryFlags": [],
     "tags": [
@@ -49,8 +47,7 @@
             "path": "LICENSE"
         }
     },
-    "files": [
-        {
+    "files": [{
             "path": "task"
         },
         {
@@ -58,16 +55,14 @@
             "addressable": true
         }
     ],
-    "contributions": [
-        {
-            "id": "codesigning-task",
-            "type": "ms.vss-distributed-task.task",
-            "targets": [
-                "ms.vss-distributed-task.tasks"
-            ],
-            "properties": {
-                "name": "task"
-            }
+    "contributions": [{
+        "id": "codesigning-task",
+        "type": "ms.vss-distributed-task.task",
+        "targets": [
+            "ms.vss-distributed-task.tasks"
+        ],
+        "properties": {
+            "name": "task"
         }
-    ]
+    }]
 }
